@@ -5,6 +5,7 @@ import AuthRouter from "./router/Auth.router"
 import UserRouter from "./router/User.router"
 import ProjectRouter from "./router/Project.router"
 import TaskRouter from "./router/Task.router"
+import HealthRouter from "./router/Health.router"
 
 // Router that contains all the routes/endpoints in the application
 const router = Router()
@@ -20,6 +21,9 @@ router.use("/projects", ProjectRouter)
 
 // Register the "Task" routers
 router.use("/tasks", TaskRouter)
+
+// Register the "Task" routers
+router.use("/health", HealthRouter)
 
 // Export the router
 export default router
